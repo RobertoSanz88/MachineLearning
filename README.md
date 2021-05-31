@@ -10,5 +10,11 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 5. [Random Forest](#id5)
 6. [XGBoost](#id6)
 
-
+**Algoritmos usados en Regresión**   
+1. [Regresión Logística](#id1)
+2. [KNN](#id2)
+3. [Arbol de decisión](#id3)
+4. [SVM](#id4)
+5. [Random Forest](#id5)
+6. [XGBoost](#id6)
 
