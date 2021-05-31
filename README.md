@@ -18,3 +18,7 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 5. [Random Forest](#id5)
 6. [XGBoost](#id6)
 
+**Deep Learning usado en Clasificación**
+1. [Red neuronal 1 capa oculta](#id1)
+2. [Red neuronal 2 capas ocultas](#id2)
+3. [Red neuronal varias capas conv, pooling, dense](#id3)
