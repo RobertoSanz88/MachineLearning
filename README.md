@@ -11,7 +11,7 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 6. [XGBoost](#id6)
 
 **Algoritmos usados en Regresión**   
-1. [Regresión Logística](#id1)
+1. [Regresión Lineal](#id1)
 2. [KNN](#id2)
 3. [Arbol de decisión](#id3)
 4. [SVM](#id4)
