@@ -1,5 +1,5 @@
 # Machine Learning
-Aplicación de algoritmos de ML sobre distintos Datasets
+Aplicación de algoritmos de ML sobre varios Datasets y comparativa
 
 En lenguaje Python con el entorno Jupiter Notebooks
 
