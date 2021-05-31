@@ -2,7 +2,7 @@
 Aplicación de algoritmos de ML sobre distintos Datasets
 
 
-**Algoritmos usados**   
+**Algoritmos usados en Clasificación**   
 1. [KNN](#id1)
 2. [Arbol de decisión](#id2)
 3. [SVM](#id3)
