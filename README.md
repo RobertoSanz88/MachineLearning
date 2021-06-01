@@ -10,13 +10,13 @@ En lenguaje Python con el entorno Jupiter Notebooks
 6. [XGBoost](#id6)
 
 **Datasets de estudio**
-Medicamentos
-Células de cancer
-Clientes de operador Telecom
-Churn de operador Telecom
-Numeros escritos a mano: dataset MNIST 
-  60.000 muestras entrenamiento
-  10.000 muestras de test
+- Medicamentos
+- Células de cancer
+- Clientes de operador Telecom
+- Churn de operador Telecom
+- Numeros escritos a mano: dataset MNIST 
+  + 60.000 muestras entrenamiento
+  + 10.000 muestras de test
   
 **Resultados**
 Medicamentos
