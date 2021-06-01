@@ -28,7 +28,7 @@ En lenguaje Python con el entorno Jupiter Notebooks
 - Churn Telecom
   + El mejor es XGBoost (87,5%) luego el resto excepto KNN que queda al final
 - Dataset MNIST
-  + El mejor es KNN
+  + El mejor es SVM (97,92%) seguido de KNN (97%)
   + No está nada mal comparado con lo que se consigue con una red neuronal
     - Red 1 capa Dense 512 N -> 98,6%
     - Red varias capas LeNet5: CNN 6 +Pooling +CNN 16 +Pooling +Dense 120 +Dense 84 -> 99,43%
