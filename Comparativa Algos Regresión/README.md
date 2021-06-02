@@ -2,7 +2,7 @@
 En lenguaje Python con el entorno Jupiter Notebooks
 
 **Algoritmos usados en Clasificación**   
-1. [Regresión Lineal (RL + SGD)](#id1)
+1. [Regresión Lineal (RL con SGD)](#id1)
 2. [KNN](#id2)
 3. [Arbol de decisión](#id3)
 4. [SVM](#id4)
