@@ -24,7 +24,7 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 3. [Red neuronal 5 capas ocultas con 64 neuronas](#id3)
 
 
-**Métodos optimización hiperaprámetros:**
+**Métodos optimización hiperparámetros de una NN**
 1. [GRID con bucle](#id1)
 2. [Sci-kit Learn GridSearhCV](#id2)
 3. [Sci-kit Learn RandomizedSearchCV](#id3)
