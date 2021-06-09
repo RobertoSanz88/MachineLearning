@@ -31,6 +31,6 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 4. [Keras RandomSearch](#id4)
 5. [Keras Hyperband](#id5)
 
-** Callbacks**
-1. Método [EarlyStopping] : para evitar overfit/variance
-2. Método [ModelCheckpoint] : para grabar el modelo que ha conseguido mejor precisión durante la iteración
+**Callbacks**
+1. Método [EarlyStopping](#id6) : para evitar overfit/variance
+2. Método [ModelCheckpoint](#id6) : para grabar el modelo que ha conseguido mejor precisión durante la iteración
