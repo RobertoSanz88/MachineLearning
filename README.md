@@ -19,6 +19,6 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 6. [XGBoost](#id6)
 
 **Deep Learning usado en Clasificación**
-1. [Red neuronal 1 capa oculta](#id1)
-2. [Red neuronal 2 capas ocultas](#id2)
-3. [Red neuronal varias capas conv, pooling, dense](#id3)
+1. [Red neuronal 1 capa oculta con 8 neuronas](#id1)
+2. [Red neuronal 3 capas ocultas con 32 neuronas](#id2)
+3. [Red neuronal 5 capas ocultas con 64 neuronas](#id3)
