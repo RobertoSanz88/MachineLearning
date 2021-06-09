@@ -13,5 +13,5 @@
         + Aunque suba el número de neuronas, ej 512, no aumenta la precisión
 	+ Con 3 capas: con 32 neuronas si puedo superarlo y llegar al 100%. 
         + Más capas y más neuronas sí generan más inteligencia, que los sistemas tradicionales
-        + con 8 neuronas predice peor que 1 capa de 8 neuronas. 
-        + Parece que más inteligencia necesita además de más profundidad (capas) más neuronas por capa. 
+        + 3 capas de 8 neuronas predicen peor que 1 capa de 8 neuronas. 
+        	Parece que más inteligencia necesita además de más profundidad (capas) más neuronas por capa. 
