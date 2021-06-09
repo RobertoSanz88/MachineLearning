@@ -3,7 +3,7 @@ Se usa el dataset: telecust.csv que parece complicado de mejorar
 
 **Métodos estudiados:**
 
-1. [GRID con bucle]
+1. [GRID con bucle](#id1)
 2. [Sci-kit Learn GridSearhCV]
 3. [Sci-kit Learn RandomizedSearchCV]
 4. [Keras RandomSearch]
