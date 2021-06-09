@@ -22,3 +22,15 @@ Aplicación de algoritmos de ML sobre distintos Datasets
 1. [Red neuronal 1 capa oculta con 8 neuronas](#id1)
 2. [Red neuronal 3 capas ocultas con 32 neuronas](#id2)
 3. [Red neuronal 5 capas ocultas con 64 neuronas](#id3)
+
+
+**Métodos optimización hiperaprámetros:**
+1. [GRID con bucle](#id1)
+2. [Sci-kit Learn GridSearhCV](#id2)
+3. [Sci-kit Learn RandomizedSearchCV](#id3)
+4. [Keras RandomSearch](#id4)
+5. [Keras Hyperband](#id5)
+
+** Callbacks**
+1. Método [EarlyStopping] : para evitar overfit/variance
+2. Método [ModelCheckpoint] : para grabar el modelo que ha conseguido mejor precisión durante la iteración
