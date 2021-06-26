@@ -1,7 +1,7 @@
 # <center>Hyperparameter Optimization in Neural Networks using Callbacks</center>
 Dataset used: telecust.csv   -->as it seems a tough one
 
-**Méthods under study:**
+**Methods under study:**
 
 1. [GRID with Loop](#id1)
 2. [Sci-kit Learn GridSearhCV](#id2)
