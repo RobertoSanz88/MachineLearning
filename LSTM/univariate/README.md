@@ -12,24 +12,26 @@ Dataset used: "jena_climate_2009_2016.csv" for Temperature prediction
 4. [Dense 1x32](#id4)
 5. [ML conventional](#id5)
 
+
 The univariate case:
 The mentioned dataset includes originally 14 features of weather forecast. We will concentrate in just one of them: one variable/feature.
 
 (in another notebook the multivariate case is studied)
+
 
 Time series with LSTM:
 Time series are data coming from the same subject but taken at different times as opposed to other datasets where observations are coming from different subjects with the same features.
 LSTM neural networks are used when data are time series and the target prediction is a time in the future.
 Observations/samples need to be built taking into account time samples that will be used as input(x)  and time samples to be used as output(y). So, though there is only 1 feature, the input is 2D, (samples, 1 feature time history)
 
+
 SingleStep, Multistep: 
 This refers to the output chosen: 1 times in the future is told as single step.  Many times to be predicted in the future will be called MultiStep. We concentrate here in SingleStep. Moreover, as the output can be any temperature value this case is a **regression** not a classification problem. Accuracy will be measured with Rsquared (R2).
 
 (in another notebook the multivariate multistep case is studied)
 
+
 **The objective** is to predict the Temperature in 12 hours time, using the temperature data of the 120 hours just passed.
-
-
 
 
 # RESULTS
