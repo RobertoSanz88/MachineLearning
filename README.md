@@ -10,7 +10,7 @@ ML algorithms applied to different datasets to compare their performance
 5. [Random Forest](#id5)
 6. [XGBoost](#id6)
 
-**Regression algorithms usedn**   
+**Regression algorithms used**   
 1. [Linear Regression](#id1)
 2. [KNN](#id2)
 3. [Decision Tree](#id3)
