@@ -1,36 +1,36 @@
-# Comparativa Algoritmos de Clasificación
-En lenguaje Python con el entorno Jupiter Notebooks
+# Classification Algorithms Comparison
+In Python language with Jupiter Notebooks environment
 
-**Algoritmos usados en Clasificación**   
+**Algorithms used in Classification**   
 1. [KNN](#id1)
-2. [Arbol de decisión](#id2)
-3. [SVM](#id3)
-4. [Regresión Logística](#id4)
+2. [Decision Tree](#id2)
+3. [Support Vector Machines](#id3)
+4. [Logistic Regression](#id4)
 5. [Random Forest](#id5)
 6. [XGBoost](#id6)
 
-**Datasets de estudio**
-- Medicamentos
-- Células de cancer
-- Clientes de operador Telecom
-- Churn de operador Telecom
-- Numeros escritos a mano: dataset MNIST 
-  + 60.000 muestras entrenamiento
-  + 10.000 muestras de test
+**Datasets used .csv**
+- Drug200
+- Cell-samples
+- telecust1000t
+- ChurnData
+- Handwritten digits MNIST dataset
+  + 60.000 samples for training
+  + 10.000 samples for test
   
-**Resultados**
-- Medicamentos
-  + El mejor SVM (97,5%) luego Decision Tree y Random Forest
-- Células cancer
-  + El mejor es KNN (100%) luego el resto excepto LR que queda al final
-- Clientes Telecom
-  + El mejor es KNN (43%) seguido de Logistic Regression y SVM
-- Churn Telecom
-  + El mejor es XGBoost (87,5%) luego el resto excepto KNN que queda al final
-- Dataset MNIST
-  + El mejor es SVM (97,92%) seguido de KNN (97%)
-  + No está nada mal comparado con lo que se consigue con una red neuronal
-    - Red 1 capa Dense 512 N -> 98,6%
-    - Red varias capas LeNet5: CNN 6 +Pooling +CNN 16 +Pooling +Dense 120 +Dense 84 -> 99,43%
+**Results**
+- Drugs
+  + SVM is the best (97,5%) followed by Decision Tree and Random Forest
+- Cancer cells
+  + KNN is the best (100%) followed by the rest except for LR that lays below
+- Telecom Customers
+  + KNN is the best (43%) followed by Logistic Regression and SVM
+- Telecom Churn
+  + XGBoost is the best (87,5%) followed by the rest except for KNN that lays below
+- MNIST Dataset
+  + SVM is the best (97,92%) KNN the second best (97%)
+  + It is not bad compared to what you can get with a Neural Network 
+    - NN with 1 layer of 512 neurons -> 98,6%
+    - A deep NN such as LeNet5: CNN 6 +Pooling +CNN 16 +Pooling +Dense 120 +Dense 84 -> 99,43%
     - Ref: https://medium.com/analytics-vidhya/dense-or-convolutional-part-1-c75c59c5b4ad
     
