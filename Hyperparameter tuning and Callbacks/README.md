@@ -1,36 +1,36 @@
-# <center>Optimización de Hiperparámetros en NN con uso de  Callbacks</center>
-Se usa el dataset: telecust.csv que parece complicado de mejorar
+# <center>Hyperparameter Optimization in NN using Callbacks</center>
+Dataset used: telecust.csv   -->as it seems a tough one
 
-**Métodos estudiados:**
+**Méthods under study:**
 
-1. [GRID con bucle](#id1)
+1. [GRID with Loop](#id1)
 2. [Sci-kit Learn GridSearhCV](#id2)
 3. [Sci-kit Learn RandomizedSearchCV](#id3)
 4. [Keras RandomSearch](#id4)
 5. [Keras Hyperband](#id5)
 
-Estudio y comparación de estos métodos de optimizar hiperparámetros.
-Se consideran hiperparámetros en este estudio todos los que influyen en obtener el mejor resultado final, es decir, en hallar el modelo con mejor precisión.
+Study and compare all 5 methods to optimise hyperparameters in a NN.
+They are considered hyperparameters all that have an influence in the final result of accuracy prediction. 
 
-Se incluyen:
-- Parámetros de arquitectura o estructura de la red
-    + [Numero de capas](#id6)
-    + [Número de neuronas por capa](#id6) (en todas el mismo por no complicarlo)
-- Parámetros de entrenamiento del modelo
+It includes:
+- Architecture or network structure parameters
+    + [Number of layers](#id6)
+    + [Number of neurons per layer](#id6) (all layers the same for the sake of complexity)
+- Model training parameters
     + [Epochs](#id6)
     + [Batch size](#id6)
-- Parámetros de la red (hiperp. propiamente dichos)
-    + [Función de activación de capa de entrada](#id6)
-    + [Función de activación de capas ocultas](#id6)
-    + [Optimizador del modelo](#id6) (aunque suele ser un hiperparámetro se ha fijado como Adam)
+- Network functional parameters (the usual hyperparams)
+    + [Entry layer activation function](#id6)
+    + [Hidden layers activation functions](#id6)
+    + [network optimiser (of cost function)](#id6) (it is usually a hyperparemeter but it has been fixed to Adam in this case)
 
-Se ha hecho uso de 2 **CALLBACKS** para mejorar la precisión y acelerar el proceso, que puede ser muy largo en los de fuerza bruta
-1. Método [EarlyStopping](#id7) : para evitar overfit/variance
-2. Método [ModelCheckpoint](#id7) : para grabar el modelo que ha conseguido mejor precisión durante la iteración
+Two **CALLBACKS** have been used to improve accuracy and accelerate the training process, as it can be really long in "brute force" cases 
+1. Method [EarlyStopping](#id7) : to avoid overfit/variance
+2. Method [ModelCheckpoint](#id7) : to save in disk the model with the best accuraacy in the fitting iteration
 
-# CONCLUSIONES
-- El método **GRID con bucle** es el que mejor modelo encuentra, pero al hacerlo con todos las combinaciones lleva mucho tiempo. No incluye K-fold CV y usa el conjunto de test del 20%, para validar modelos durante la iteración. El overfit se trata de evitar, no con CV sino con los callbacks: EarlyStopping y ModelCheckPoints.
-- El método **GridSearchCV** de Sci-kit Learn, que también es por fuerza bruta, consigue peores resultados porque incluye 5-fold CV. Eso significa quitar otro 20% al conjunto de train para validar los modelos, con lo que se entrenan los modelos con solo un 64% y los resultados son peores.
-- El método **RandomizedSearchCV** de Sci-kit Learn, es un buen compromiso entre duración y resultado. Explorar un número mayor de 10 de conjuntos de parámetros al azar no mejora el resultado. Sin embargo un cv de 5 en lugar de 3 sí que lo mejora, al entrenar los modelos con más datos.
-- El método **RandomSearch** de Keras, no resulta práctico porque optimiza epochs y batch por su cuenta. Al obtener el mejor modelo se vuelve a entrenar con todo el train set pero no se conoce que epochs y batch dieron el mejor resultado. habría que optimizarlos de nuevo.
-- El método **Hyperband** de Keras, es tan intensivo como el de fuerza bruta, hace tantos "trials" como combinaciones de hiperparámetros o incluso alguna más. 12 trials 10 hiperp. Permite fácilmente meter Earlystopping y ModelCheckpoint, lo que acelera el proceso, pero en Fuerza bruta también lo podemos incluir en el fit. Por lo cual no le veo ninguna ventaja.
+# CONCLUSIONS
+- **GRID with loop** method is the one that finds the best model, though as it tests all combinations ("brute force") it takes a long time. It does not make K-fold CV and uses the 20% part of the dataset for test in order to validate models during the fitting iteration. Overfit is intended to be avoided not with CV but with the callbacks: EarlyStopping and ModelCheckPoint.
+- **GridSearchCV** Sci-kit Learn method is using "brute force" as well but it gets worse results. In my opinion as it includes a 5-fold CV. That means that it takes another 20% of the training set to validate models, therefore, models get trained with only 64% of samples in the original dataset and results get worse.
+- **RandomizedSearchCV** Sci-kit Learn method is a good trade-off between duration and performance. It is worth noting that exploring a bigger number of parameters sets does not improve the results. However a 5-fold CV does improve the results achieved with a 3-fold CV. In my opinion, it is becasue models are trained with more data. 
+- **RandomSearch** Keras method, is not very practical as it optimizes epochs and batch_size on its own. So, after you see what model and parameters are the best, you are missing the epochs and batch to be used. A new optimisation of those 2 parametrs is needed.
+- **Hyperband** Keras method, surprisingly is as time consuming as "brute force" methods. It makes as many trials as hyperparameters combinations or even some more: 12 trials, 10 hiperp combs. It easily allows to include callbacks thanks to which the process is accelerated, but this is also the case in brute force methods, thus I see no advantage in using it.
