@@ -31,5 +31,5 @@ ML algorithms applied to different datasets to compare their performance
 4. [Keras RandomSearch](#id4)
 5. [Keras Hyperband](#id5)
 
-- Método [EarlyStopping](#id6) : to avoid overfit/variance
-- Método [ModelCheckpoint](#id6) : to save in disk the model with the best accuracy in the fitting iteration
+- Method [EarlyStopping](#id6) : to avoid overfit/variance
+- Method [ModelCheckpoint](#id6) : to save in disk the model with the best accuracy in the fitting iteration
