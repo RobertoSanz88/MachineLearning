@@ -1,4 +1,4 @@
-# <center>Hyperparameter Optimization in NN using Callbacks</center>
+# <center>Hyperparameter Optimization in Neural Networks using Callbacks</center>
 Dataset used: telecust.csv   -->as it seems a tough one
 
 **Méthods under study:**
