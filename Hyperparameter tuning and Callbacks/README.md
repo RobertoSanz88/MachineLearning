@@ -13,7 +13,7 @@ Study and compare all 5 methods to optimise hyperparameters in a NN.
 They are considered hyperparameters all that have an influence in the final result of accuracy prediction. 
 
 It includes:
-- Architecture or network structure parameters
+- Architecture parameters
     + [Number of layers](#id6)
     + [Number of neurons per layer](#id6) (all layers the same for the sake of complexity)
 - Model training parameters
