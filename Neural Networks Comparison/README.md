@@ -1,22 +1,23 @@
-# Comparativa Redes Neuronales
+# Neural Networks Comparison
 
-**Redes usadas**   
-- Red Dense 1 capa oculta
-- Red Dense de 3 capas ocultas 
+**Networks used**   
+- NN with 1 Dense hidden layer
+- NN with 3 Dense hidden layers 
 
-**Datasets usados**   
-- Medicamentos
+**Datasets used**   
+- Drugs
+- Telecom Customers
 
-**Resultados**
-- Medicamentos
-	+ Con 1 capa: con 8 neuronas ya alcanzo la precisión de 97,5% de SVM que era el mejor de los tradicionales
-        + Aunque suba el número de neuronas, ej 512, no aumenta la precisión
-	+ Con 3 capas: con 32 neuronas si puedo superarlo y llegar al 100%. 
-        + Más capas y más neuronas sí generan más inteligencia, que los sistemas tradicionales
-        + Pero 3 capas de 8 neuronas predicen peor que 1 capa de 8 neuronas. 
-        	- Parece que más inteligencia necesita además de más profundidad (capas) más neuronas por capa. 
-- Clientes telecom
-	+ Este es el que menos precisión he conseguido, 43% parece un dataset complicado de clasificar
-	+ Con 1 NN de 1 capa y 8 neuronas ya consigo algo mejor precisión 46.5%
-	+ Con 3 capas de 32 neuronas se consigue un 49%, mi máximo
-	+ Con 5 capas de 63 neuronas se consigue peor precisión, por lo cual creo que ya el modelo está sobredimensionado y hace overfit
+**Results**
+- Drugs
+	+ 1 layer with 8 neurons is enough to reach 97,5% accuracy that was the one achieved by SVM, the best of conventional ML methods.
+        + Regardless the number of neurons is increased, eg to 512, accuracy does not improve.
+	+ 3 layers with 32 neurons is needed go beyond and reach even 100%. 
+        + As conclusion, more layers and more neurons do generate more intelligence than conventional algorithms.
+        + As highlight to remark that 3 layers woth 8 neurons predict worse that 1 layer with 8 neurons.
+        	- So it seems that more intelligence needs from, not only more layers, but also more neurons in each of those layers. 
+- Telecom Customers
+	+ Only a 43% accuracy was reached so it seems a difficult set for classification
+	+ 1 layer with 8 neurons gets slightly better accuracy: 46.5%
+	+ 3 layers with 32 neurons reaches 49%, the maximum
+	+ 5 layers with 64 neurons gets worse accuracy, thus, I believe the model is oversized and is overfitting.
