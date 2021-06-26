@@ -10,7 +10,7 @@ Dataset used: telecust.csv   -->as it seems a tough one
 5. [Keras Hyperband](#id5)
 
 Study and compare all 5 methods to optimise hyperparameters in a NN.
-They are considered hyperparameters all that have an influence in the final result of accuracy prediction. 
+Hyperparameters considered are all those that have an influence in the final result of accuracy prediction. 
 
 It includes:
 - Architecture parameters
