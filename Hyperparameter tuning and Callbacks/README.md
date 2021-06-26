@@ -4,7 +4,7 @@ Dataset used: telecust.csv   -->as it seems a tough one
 **Methods under study:**
 
 1. [GRID with Loop](#id1)
-2. [Sci-kit Learn GridSearhCV](#id2)
+2. [Sci-kit Learn GridSearchCV](#id2)
 3. [Sci-kit Learn RandomizedSearchCV](#id3)
 4. [Keras RandomSearch](#id4)
 5. [Keras Hyperband](#id5)
