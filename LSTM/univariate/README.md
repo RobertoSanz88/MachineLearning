@@ -43,5 +43,5 @@ This refers to the output chosen: 1 times in the future is told as single step. 
 - **Dense 3x128** we explore how much better the LSTM networks are compared to regular Dense networks. We can see that for the big network the result of Dense is similar or even better. R2 = 88.11%.
 - **Dense 1x32** for the small network Dense is not performing as good as LSTM. R2 = 88.22%. Regardless of the R2 number, the prediction looks better looking at the plot though the number is similar.
 - **ML conventional** finally we explore what would be the performance of conventional algorithms in timeseries prediction. 
-    Performance is quite good to me in some cases. SVM regression reached 87.63% and Linear regression got a 87.2% in 1 minute training!!! 
+    Performance is quite good to me in some cases. SVM regression reached 87.59% and Linear regression got a 87.2% in 1 minute training!!! 
     But we can clearly see that LSTM networks perform better when volume of data is starting to getting big.
