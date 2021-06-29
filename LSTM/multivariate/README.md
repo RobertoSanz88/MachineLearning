@@ -10,12 +10,12 @@ Dataset used: "jena_climate_2009_2016.csv" for Temperature prediction
 2. [Dense 1x32](#id2)
 3. [LSTM 3x128](#id3)
 
-Multivariate => we forecast one feature in the future, by training with that feature observations in the past + other features observations in the past. In this case temperature, pressure and humidity
+Multivariate => we forecast one feature in the future, by training with that feature observations in the past + other features observations in the past. In this case, temperature, pressure and humidity.
 
-Multistep => we forecast not only 1 point in the future but all from now to that point. In this case from 1h to 12h in the future
+Multistep => we forecast not only 1 point in the future but all from now to that point. In this case, from 1h to 12h in the future.
 
 
-**The objective** is to predict the Temperature in 1 hour time, 2 hours time, .., upto 12 hours time (multistep), using the temperature data of the 120 hours just passed, plus pressure and humifity data of the 120h passed (multivariate)
+**The objective** is to predict the Temperature in 1 hour time, 2 hours time, .., up to 12 hours time (multistep), using the temperature data of the 120 hours just passed, plus pressure and humidity data of the 120 h just passed (multivariate)
 
 
 # RESULTS
