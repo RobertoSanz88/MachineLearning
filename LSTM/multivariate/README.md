@@ -20,7 +20,7 @@ Multistep => we forecast not only 1 point in the future but all from now to that
 
 # RESULTS
 - **LSTM 1x32** we try this first as it was the best performer for univariate with R2 = 87.86%. This time get improve it to 92,02%.  
-    Graphically seen the improvement is quite important. We see it in 2 different ways of visualization.
+    Graphically seen the improvement is quite important. We see it in **2 different ways of visualization**.
 - **Dense 1x32** we check the impact of multivariate in the Dense network and in this case it gets less than 1% better upto 89%, far away from the above result. 
     The difference with the LSTM here is significant
 - **LSTM 3x128** finally we try with the bigger network as we could expect something better, as the input data is more complex now. But the deceiving result is that it does not improve the result
