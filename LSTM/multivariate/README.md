@@ -22,4 +22,4 @@ Multistep => we forecast not only 1 point in the future but all from now to that
 - **LSTM 1x32** we try this first as it was the best performing network for the univariate case with R2 = 87.86%. This time it improves it to 92,02%. This result could be misleading if we compare it directly to the univariate single step. Here, the accuracy is the average of all time steps, from 1h to 12h, not just the 12h mark. The 12 h time step actually improves just to 88,04%. We see it in **2 different ways of visualization**.
 - **Dense 1x32** we check the impact of multivariate in the Dense network and in this case the accuracy is 89%, far away from the above result. 
     The difference with the LSTM here is significant in all time steps.
-- **LSTM 3x128** finally we try with the bigger network as we could expect something better, as the input data is more complex now. But the deceiving result is that it does not improve the result of 1x32
+- **LSTM 3x128** finally we try with the bigger network as we could expect something better, since the input data is more complex now. But the deceiving result is that it does not improve the result of 1x32
