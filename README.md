@@ -37,7 +37,8 @@ ML algorithms applied to different datasets to compare their performance
 
 **LSTM**
 
-LSTM neural networks are commonly used with Time series datasets as they perform better than regular Dense networks
+LSTM neural networks are commonly used with Time series datasets as they perform better than regular Dense networks.
 We study and compare here:
+
 1.[Univariate case](#id1)
 2.[Multivariate multistep case](#id2)
