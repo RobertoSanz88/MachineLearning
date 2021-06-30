@@ -33,3 +33,9 @@ ML algorithms applied to different datasets to compare their performance
 
 - Method [EarlyStopping](#id6) : to avoid overfit/variance
 - Method [ModelCheckpoint](#id6) : to save in disk the model with the best accuracy in the fitting iteration
+
+**LSTM**
+LSTM neural networks are commonly used with Time series datasets as they perform better than regular Dense networks
+We study and compare here:
+1.[Univariate case]
+2.[Multivariate multistep case]
